@@ -3,7 +3,7 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-NoSQL-green)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688)
 ![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-purple)
-![Platform](https://img.shields.io/badge/Platform-macOS%20M1%2F M2-black)
+![Platform](https://img.shields.io/badge/Platform-macOS%20M1%2FM2-black)
 # 📊 Financial Knowledge Graph + AI Q&A System
 
 ระบบนี้เป็นโครงการ Data Engineering ที่ออกแบบมาเพื่อเก็บข้อมูลราคาหุ้นแบบ Real-Time ผ่าน Kafka  
@@ -139,17 +139,6 @@ Response:
   "answer": "Tesla price: 233.52 USD. The stock is currently showing moderate upward momentum."
 }
 ```
-## 🎥 Demo (Running System)
-
-| Component | Preview |
-|----------|---------|
-| Producer Streaming | *(ใส่ภาพตอน Terminal แสดง `Sent:`)* |
-| Consumer ETL | *(ใส่ภาพตอน Terminal แสดง `Inserted to MongoDB`)* |
-| MongoDB Data View | *(ใส่ภาพ Compass)* |
-| Q&A API Response | *(ใส่ภาพ Swagger UI)* |
-
-> แนะนำให้บันทึกวิดีโอสั้น 20–45 วินาที  
-
 ## 📈 Results & Discussion
 	•	ระบบสามารถประมวลผลข้อมูลแบบ Real-Time ผ่าน Kafka ได้สำเร็จ
 	•	MongoDB ทำให้จัดเก็บข้อมูลได้แบบยืดหยุ่นและขยายได้ง่าย
