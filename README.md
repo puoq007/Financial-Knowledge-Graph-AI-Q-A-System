@@ -90,3 +90,40 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Start Kafka + MongoDB
+```bash
+docker compose up -d
+```
+
+## Run Producer (ส่งข้อมูลเข้าระบบ)
+```bash
+python3 producer.py
+```
+
+## Run Consumer (บันทึกลง MongoDB)
+```bash
+python3 consumer_etl.py
+```
+
+## Start Ollama (ต้องรันก่อนใช้ API)
+```bash
+ollama serve
+ollama pull llama3
+```
+
+## Run FastAPI Backend
+```bash
+uvicorn app_ollama:app --reload --port 8000
+```
+## Test API (Swagger UI)
+```bash
+http://127.0.0.1:8000/docs
+```
+
+## 🧪 Example API Usage
+Request:
+```json
+{
+  "question": "What is the latest price of Tesla?"
+}
+```
